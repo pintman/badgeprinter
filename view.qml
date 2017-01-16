@@ -107,7 +107,7 @@ Rectangle {
 	    }
 
 	    Image {
-		source: "piandmore-small.png"
+		source: "logo-small.png"
 		anchors.right: parent.right
 		anchors.rightMargin: 20
 		anchors.top: parent.top
