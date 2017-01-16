@@ -171,7 +171,7 @@ Rectangle {
 	id: checkbox
 	opacity: nameBadge.opacity
 
-	//visible: false //pam 8
+	visible: false //pam 8
 
 	Text {
 	    text: "X"
@@ -192,7 +192,7 @@ Rectangle {
 	}
 
 
-
+	/*
 	Text {
 	    anchors.left: checkbox.right
 	    anchors.leftMargin: 15
@@ -205,6 +205,7 @@ Rectangle {
 	    id: checkboxText1
 	    visible: false //pam 8
 	}
+	*/
 
 	Text {
 	    anchors.left: checkboxText1.left
@@ -241,6 +242,7 @@ Rectangle {
 	    text: "Drucken >>"
 	}
 
+	/*
 	Text {
 	    font.family: "Lato"
 	    font.pixelSize: 16
@@ -249,8 +251,9 @@ Rectangle {
 	    anchors.topMargin: 10
 	    anchors.left: parent.left
 	    color:  "#000"
-	    text: "Namensschild bitte nicht auf empfindliche Stoffe kleben."
+	    text: "Nicht auf empfindliche Stoffe kleben."
 	}
+	*/
 
 
 	MouseArea {
