@@ -119,7 +119,7 @@ Rectangle {
 	    
 	    
 	    Text {
-		text: "#pam9"
+		text: "#ita17"
 		anchors.baseline: parent.bottom
 		anchors.baselineOffset: -34
 		anchors.right: parent.right
@@ -203,7 +203,7 @@ Rectangle {
 	    font.weight: Font.Normal
 	    text: "An der Verlosung teilnehmen"
 	    id: checkboxText1
-	    //visible: false //pam 8
+	    visible: false //pam 8
 	}
 
 	Text {
@@ -216,7 +216,7 @@ Rectangle {
 	    text: "Am Ende der Veranstaltung werden unter allen Anwesenden Sachpreise verlost (Bücher, Gadgets, etc.). Dein Namensschild ist das Los. Der Rechtsweg ist ausgeschlossen."
 	    wrapMode: Text.WordWrap
 	    width: 450
-	    //visible: false //pam 8
+	    visible: false //pam 8
 	}
 
     }
