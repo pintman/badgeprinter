@@ -208,8 +208,8 @@ Rectangle {
 	*/
 
 	Text {
-	    anchors.left: checkboxText1.left
-	    anchors.top: checkboxText1.bottom
+	    //anchors.left: checkboxText1.left
+	    //anchors.top: checkboxText1.bottom
 	    anchors.topMargin: 5
 	    font.family: "Lato"
 	    font.pixelSize: 20
