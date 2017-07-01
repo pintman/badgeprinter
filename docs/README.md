@@ -4,7 +4,9 @@ Mit Hilfe eines Etikettendruckers vom Typ "Brother QL-710" oder
 "Brother QL-710W" können individuelle Namensschilder gedruckt werden, die sich
 die Teilnehmer einer Konferenz oder Messe auf das Hemd kleben können.
 
-![Etikettendrucker](badgeprinter_pam95.jpg)
+![Etikettendrucker](labelprinter.jpg)
+
+![Etikettendrucker im Einsatz](badgeprinter_pam95.jpg)
 
 ## Installation
 
