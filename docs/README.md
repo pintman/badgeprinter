@@ -13,10 +13,12 @@ die Teilnehmer einer Konferenz oder Messe auf das Hemd kleben können.
 Zunächst muss ein Etikettendrucker unter dem Namen ``Brother_QL-710W`` im 
 Betriebssystem installiert werden.
 
-Es werden PySide für die grafische Oberfläche und die "Python Imaging Library"
-(PIL) benötigt, welche über den Paketmanager installiert werden können.
+Es werden PySide für die grafische Oberfläche und die "Python Imaging
+Library" (PIL) benötigt, welche über den Paketmanager installiert
+werden können. Das Paket ImageMagick wird für die Konvertierung des
+Bildmaterials benötigt.
 
-    $ sudo apt install python3-pyside python3-pil
+    $ sudo apt install python3-pyside python3-pil imagemagick
     
 In der Datei ``view.qml`` kann das Hashtag geändert werden.
 
