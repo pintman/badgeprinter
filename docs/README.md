@@ -28,3 +28,7 @@ Das Programm kann dann gestartet werden.
     python3 badgeprinter.py
 
 Mit Alt-F4 kann es wieder beendet werden.
+
+## Danke
+
+Das Projekt beruht auf dem [badgeprinter-Projekt der PiAndMore-Konferenz](https://github.com/PiAndMore/badgeprinter). Danke für die Vorarbeiten.
