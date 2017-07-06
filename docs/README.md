@@ -22,17 +22,20 @@ Bildmaterials benötigt.
     
 In der Datei ``view.qml`` kann das Hashtag geändert werden.
 
-Das Logo befindet sich in der Datei ``logo-small.png`` und kann dort angepasst
-werden.
+Verschiedene Logos befinden sich im Verzeichnis ``logos`` und werden
+jeweils durch einem symbolischen Link ``logo-small.png`` referenziert.
+
 
 ## Start
 
 Das Programm kann dann gestartet werden.
 
-    python3 badgeprinter.py
+    $ python badgeprinter.py
 
 Mit Alt-F4 kann es wieder beendet werden.
 
 ## Danke
 
-Das Projekt beruht auf dem [badgeprinter-Projekt der PiAndMore-Konferenz](https://github.com/PiAndMore/badgeprinter). Danke für die Vorarbeiten.
+Das Projekt beruht auf dem [badgeprinter-Projekt der
+PiAndMore-Konferenz](https://github.com/PiAndMore/badgeprinter). Danke
+für die Vorarbeiten.
