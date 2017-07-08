@@ -57,3 +57,10 @@ docs/_build/
 target/
 
 badges.db
+
+# virtual environements
+venv
+
+# pycharm project folder
+.idea
+
