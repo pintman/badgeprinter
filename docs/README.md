@@ -20,6 +20,10 @@ Bildmaterials benötigt.
 
     $ sudo apt install python3-pyside python3-pil imagemagick
 
+Danach kann das Repo 
+[heruntergeladen](https://github.com/tbs1-bo/badgeprinter/zipball/master)
+oder mit git ausgecheckt werden.
+
 In der Datei 
 [config.ini](https://github.com/tbs1-bo/badgeprinter/blob/master/config.ini) 
 findet die Konfiguration statt. Dort können das Hashtag oder der Name 
