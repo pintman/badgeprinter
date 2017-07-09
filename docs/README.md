@@ -19,8 +19,9 @@ werden können. Das Paket ImageMagick wird für die Konvertierung des
 Bildmaterials benötigt.
 
     $ sudo apt install python3-pyside python3-pil imagemagick
-    
-In der Datei ``view.qml`` kann das Hashtag geändert werden.
+
+In der Datei ``config.ini`` findet die Konfiguration statt. Dort
+können das Hashtag oder der Name der Logo-Datei geändert werden.
 
 Verschiedene Logos befinden sich im Verzeichnis ``logos`` und werden
 jeweils durch einem symbolischen Link ``logo-small.png`` referenziert.
