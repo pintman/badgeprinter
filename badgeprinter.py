@@ -12,16 +12,19 @@ import sqlite3
 import random 
 from time import sleep
 import os
+import configparser
 
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 class MyHandler(QObject):
     
 
-    def __init__(self, window, app, *args, **kwargs):
+    def __init__(self, window, app, hashtag, logo_filename, *args, **kwargs):
         QObject.__init__(self, *args, **kwargs)
         self.window = window
         self.app = app
+        self.hashtag = hashtag
+        self.logo_filename = logo_filename
         self.conn = sqlite3.connect('badges.db')
         c = self.conn.cursor()
         c.execute(""" CREATE TABLE IF NOT EXISTS badges (created datetime, name text, twitter text, ticket text) """)
@@ -93,6 +96,11 @@ class MyHandler(QObject):
         label = window.rootObject().findChild(QObject, 'textLos')
         inputName = window.rootObject().findChild(QObject, 'inputName')
         inputTwitter = window.rootObject().findChild(QObject, 'inputTwitter')
+        txtHashtag = window.rootObject().findChild(QObject, 'textHashtag')
+        txtHashtag.setProperty("text", self.hashtag)
+
+        imgLogo = window.rootObject().findChild(QObject, 'imgLogo')
+        imgLogo.setProperty('source', self.logo_filename)
         
         inputTwitter.setProperty("visible", True)
         inputTwitter.setProperty('text', "@twitter")
@@ -116,12 +124,18 @@ class MainWindow(QDeclarativeView):
         self.setResizeMode(QDeclarativeView.SizeRootObjectToView)
  
 if __name__ == '__main__':
+    # read config
+    config = configparser.ConfigParser()
+    config.read("config.ini")
+
     # Create the Qt Application
     app = QApplication(sys.argv)
     # Create and show the main window
     window = MainWindow()
     window.setWindowFlags(Qt.FramelessWindowHint)
-    handler = MyHandler(window, app)
+    handler = MyHandler(window, app, hashtag=config['default']['hashtag'],
+                        logo_filename=config['default']['logo_filename'])
+    handler.reset_ui()
     window.rootContext().setContextProperty("handler", handler)
     window.rootObject().findChild(QObject, 'inputName').selectAll()
     window.showFullScreen()

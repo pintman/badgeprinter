@@ -107,6 +107,7 @@ Rectangle {
 	    }
 
 	    Image {
+	        objectName: "imgLogo"
 		source: "logo-small.png"
 		anchors.right: parent.right
 		anchors.rightMargin: 20
@@ -119,7 +120,8 @@ Rectangle {
 	    
 	    
 	    Text {
-		text: "#ita17"
+	        objectName: "textHashtag"
+		text: "#hashtag"
 		anchors.baseline: parent.bottom
 		anchors.baselineOffset: -34
 		anchors.right: parent.right
