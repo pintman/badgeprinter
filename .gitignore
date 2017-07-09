@@ -64,3 +64,6 @@ venv
 # pycharm project folder
 .idea
 
+# emacs  backup files
+*~
+
