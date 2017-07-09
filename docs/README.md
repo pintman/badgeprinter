@@ -20,18 +20,21 @@ Bildmaterials benötigt.
 
     $ sudo apt install python3-pyside python3-pil imagemagick
 
-In der Datei ``config.ini`` findet die Konfiguration statt. Dort
-können das Hashtag oder der Name der Logo-Datei geändert werden.
+In der Datei 
+[config.ini](https://github.com/tbs1-bo/badgeprinter/blob/master/config.ini) 
+findet die Konfiguration statt. Dort können das Hashtag oder der Name 
+der Logo-Datei geändert werden.
 
-Verschiedene Logos befinden sich im Verzeichnis ``logos`` und werden
-jeweils durch einem symbolischen Link ``logo-small.png`` referenziert.
+Verschiedene Logos befinden sich im Verzeichnis 
+[logos](https://github.com/tbs1-bo/badgeprinter/tree/master/logos) 
+und können genutzt werden.
 
 
 ## Start
 
 Das Programm kann dann gestartet werden.
 
-    $ python badgeprinter.py
+    $ python3 badgeprinter.py
 
 Mit Alt-F4 kann es wieder beendet werden.
 
