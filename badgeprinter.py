@@ -94,20 +94,23 @@ class MyHandler(QObject):
 
     def reset_ui(self):
         label = window.rootObject().findChild(QObject, 'textLos')
+        label.setProperty("text", "Los #XXXX")
+
         inputName = window.rootObject().findChild(QObject, 'inputName')
+        inputName.setProperty('text', "Vorname")
+        inputName.selectAll()
+        inputName.setProperty('focus', True)
+
         inputTwitter = window.rootObject().findChild(QObject, 'inputTwitter')
+        inputTwitter.setProperty("visible", True)
+        inputTwitter.setProperty('text', "@twitter")
+
         txtHashtag = window.rootObject().findChild(QObject, 'textHashtag')
         txtHashtag.setProperty("text", self.hashtag)
 
         imgLogo = window.rootObject().findChild(QObject, 'imgLogo')
         imgLogo.setProperty('source', self.logo_filename)
         
-        inputTwitter.setProperty("visible", True)
-        inputTwitter.setProperty('text', "@twitter")
-        inputName.setProperty('text', "Vorname")
-        inputName.selectAll()
-        inputName.setProperty('focus', True)
-        label.setProperty("text", "Los #XXXX")
         window.rootObject().findChild(QObject, 'checkboxSelected').setProperty("visible", True)
         window.rootObject().findChild(QObject, 'printButtonArea').setProperty('enabled', True)
         window.rootObject().findChild(QObject, "animateNameBadgeOn").start()
