@@ -47,3 +47,7 @@ Mit Alt-F4 kann es wieder beendet werden.
 Das Projekt beruht auf dem [badgeprinter-Projekt der
 PiAndMore-Konferenz](https://github.com/PiAndMore/badgeprinter). Danke
 für die Vorarbeiten.
+
+Eine mögliche Weiterentwicklung könnte der [Project Portfolio
+Badge](https://www.element14.com/community/community/project14/geekygadgets/blog/2017/06/14/project-portfolio-badge)
+sein, der aus ein OLED, einem Pi-Zero und einem Lipo-Akku besteht.
