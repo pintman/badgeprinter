@@ -10,8 +10,9 @@ die Teilnehmer einer Konferenz oder Messe auf das Hemd kleben können.
 
 ## Installation
 
-Zunächst muss ein Etikettendrucker unter dem Namen ``Brother_QL-710W`` im 
-Betriebssystem installiert werden.
+Zunächst muss ein Etikettendrucker unter dem Namen ``Brother_QL-710W``
+im Betriebssystem installiert werden. Die zugehörigen Treiber befinden
+sich im Verzeichnis `bin`.
 
 Es werden PySide für die grafische Oberfläche und die "Python Imaging
 Library" (PIL) benötigt, welche über den Paketmanager installiert
