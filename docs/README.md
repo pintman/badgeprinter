@@ -51,4 +51,4 @@ für die Vorarbeiten.
 
 Eine mögliche Weiterentwicklung könnte der [Project Portfolio
 Badge](https://www.element14.com/community/community/project14/geekygadgets/blog/2017/06/14/project-portfolio-badge)
-sein, der aus ein OLED, einem Pi-Zero und einem Lipo-Akku besteht.
+sein, der aus einenm OLED, einem Pi-Zero und einem Lipo-Akku besteht.
